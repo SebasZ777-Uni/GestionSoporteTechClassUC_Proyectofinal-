@@ -126,18 +126,25 @@ Si se necesita exportación, añada un método en `GestionAtencion` para escribi
 
 ---
 
-## Capturas de pantalla (placeholders)
+## Capturas de Pantalla (placefolder)
 
-- Ventana principal: `docs/screenshots/main_window.png`
-- Panel clientes: `docs/screenshots/panel_clientes.png`
-- Panel estadísticas: `docs/screenshots/panel_estadisticas.png`
-- Diálogo historial: `docs/screenshots/dialogo_historial.png`
+### Ventana Principal
+![Ventana principal](docs/screenshots/main_window.png)
+
+### Panel de Clientes
+![Panel clientes](docs/screenshots/panel_clientes.png)
+
+### Panel de Estadísticas
+![Panel estadísticas](docs/screenshots/panel_estadisticas.png)
+
+### Diálogo del Historial
+![Diálogo historial](docs/screenshots/dialogo_historial.png)
 
 ---
 
-## UML
+## Diagrama de Clases (placefolder)
+![Diagrama UML](docs/uml/diagrama-clases.png)
 
-Diagrama de clases (placeholder): `docs/uml/diagrama-clases.png`
 
 ---
 
@@ -182,8 +189,7 @@ Checklist obligatorio en la descripción del PR:
 
 ## Changelog
 
-Consulte `CHANGELOG.md` para el historial de versiones (formato *Keep a Changelog*). Añada entradas para cada release mayor o cambio relevante.
- [Unreleased]
+Consulte `CHANGELOG.md` para el historial de versiones (formato *Keep a Changelog*). 
 
  JavaDoc básico añadido a las clases del paquete modelo.
 
@@ -215,10 +221,11 @@ furnished to do so, subject to the following conditions:
 ## Autor
 
 Sebastián Polo Palacios (SebasZ777-Uni)
-Lucas Hernández 
 
 - Email: spolop@correo.unicordoba.edu.co
 - GitHub: `https://github.com/SebasZ777-Uni`
+
+Lucas Hernández Hernández 
 
 ---
 
