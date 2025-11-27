@@ -10,6 +10,22 @@ TechClassUC es una pequeña plataforma de escritorio destinada a coordinar la at
 
 ---
 
+## Objetivos
+
+### Objetivo general
+
+Desarrollar un sistema de gestión de atención al cliente que permita registrar, atender, eliminar y consultar clientes de manera eficiente, asegurando trazabilidad de acciones y priorización del flujo de atención.
+
+### Objetivos específicos
+
+1. Implementar una cola para gestionar clientes en espera (FIFO).
+2. Mantener un historial de atención mediante una lista dinámica, permitiendo consultas por ID o tipo de solicitud.
+3. Registrar todas las acciones en una pila, permitiendo revertir la última operación realizada (undo).
+4. Proveer estadísticas sobre clientes atendidos y pendientes, así como un registro completo de acciones.
+5. Analizar y justificar la elección de estructuras de datos frente a otras alternativas.
+
+---
+
 ## Características principales
 
 - Interfaz gráfica basada en Java Swing (ventana principal, paneles y diálogos).
