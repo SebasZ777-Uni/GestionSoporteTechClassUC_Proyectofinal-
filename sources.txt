@@ -1,0 +1,13 @@
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\app\Main.java
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\controlador\ControladorAtencion.java
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\modelo\Accion.java
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\modelo\Cliente.java
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\modelo\GestionAtencion.java
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\modelo\Prioridad.java
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\modelo\TipoAccion.java
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\modelo\TipoSolicitud.java
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\vista\DialogoHistorial.java
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\vista\Estilos.java
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\vista\PanelClientes.java
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\vista\PanelEstadisticas.java
+C:\Users\sebas\IdeaProjects\GestionSoporteTechClassUC\src\vista\VentanaPrincipal.java

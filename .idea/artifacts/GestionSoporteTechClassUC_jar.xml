@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="GestionSoporteTechClassUC:jar">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="archive" name="GestionSoporteTechClassUC.jar">
+      <element id="module-output" name="GestionSoporteTechClassUC" />
+    </root>
+  </artifact>
+</component>

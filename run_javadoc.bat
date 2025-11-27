@@ -1,0 +1,1 @@
+"C:\Program Files\Java\jdk-25\bin\javadoc.exe" @sources.txt -d docs/api > javadoc_log.txt 2>&1\r\nfindstr /R /C:"warning:" javadoc_log.txt > javadoc_warnings.txt || echo NoWarnings > javadoc_warnings.txt\r\nfind /C /V "" javadoc_warnings.txt

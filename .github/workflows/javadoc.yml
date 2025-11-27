@@ -1,0 +1,60 @@
+name: Generar y publicar JavaDoc
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-javadoc:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: ''
+
+      - name: Generar JavaDoc
+        run: |
+          javadoc -d docs/api -sourcepath src -subpackages app,controlador,modelo,vista
+        shell: powershell
+
+      - name: Verificar existencia index.html
+        run: |
+          if (-not (Test-Path -Path docs/api/index.html)) { Write-Error "docs/api/index.html no encontrado" }
+        shell: powershell
+
+      - name: Subir artifact (javadoc)
+        uses: actions/upload-artifact@v4
+        with:
+          name: javadoc
+          path: docs/api
+
+  publish-pages:
+    needs: build-javadoc
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: ''
+
+      - name: Build JavaDoc (Linux)
+        run: javadoc -d docs/api -sourcepath src -subpackages app,controlador,modelo,vista
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/api
+          keep_files: false
+
