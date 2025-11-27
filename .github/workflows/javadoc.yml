@@ -46,7 +46,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '17'
-          distribution: ''
+          distribution: 'temurin'
 
       - name: Build JavaDoc (Linux)
         run: javadoc -d docs/api -sourcepath src -subpackages app,controlador,modelo,vista
