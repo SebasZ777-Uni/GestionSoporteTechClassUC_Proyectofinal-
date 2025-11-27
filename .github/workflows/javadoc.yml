@@ -20,7 +20,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Generar JavaDoc
-        run: javadoc -d docs/api -sourcepath GestionSoporteTechClassUC/src -subpackages app,controlador,modelo,vista
+        run:  javadoc -d docs/api $(git ls-files "*.java")
         shell: powershell
 
       - name: Verificar existencia index.html
@@ -48,7 +48,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build JavaDoc (Linux)
-        run: javadoc -d docs/api -sourcepath GestionSoporteTechClassUC/src -subpackages app,controlador,modelo,vista
+        run: javadoc -d docs/api $(git ls-files "*.java")
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
