@@ -133,22 +133,32 @@ Si se necesita exportación, añada un método en `GestionAtencion` para escribi
 - Panel estadísticas: `docs/screenshots/panel_estadisticas.png`
 - Diálogo historial: `docs/screenshots/dialogo_historial.png`
 
-(Agregue las imágenes en `docs/screenshots/` con esos nombres antes de publicar.)
-
 ---
 
 ## UML
 
 Diagrama de clases (placeholder): `docs/uml/diagrama-clases.png`
 
-Se recomienda generar un diagrama UML de las clases en `src/modelo` (ej. con PlantUML o herramientas IDE) y colocarlo en `docs/uml/`.
-
 ---
 
-## JavaDoc
+## Documentación JavaDoc
 
-Generar JavaDoc localmente con el comando indicado arriba. Asegúrese de que todas las clases públicas en `src/modelo` incluyan JavaDoc con `@param`, `@return`, `@throws` cuando proceda, y `@author` y `@since`.
+El proyecto incluye soporte completo para documentación JavaDoc, permitiendo generar y publicar la API de clases del sistema.  
+La documentación cubre los paquetes principales del modelo MVC:
 
+- `app` — Punto de entrada de la aplicación.
+- `controlador` — Lógica que conecta la interfaz gráfica con las operaciones del modelo.
+- `modelo` — Clases de negocio, gestión de colas, historial, tipos y reglas de prioridad.
+- `vista` — Componentes gráficos basados en Java Swing.
+
+### 🛠️ Cómo generar la documentación
+
+Desde el directorio raíz del proyecto, ejecute:
+
+```bash
+
+javadoc -d docs/api -sourcepath src -subpackages app,controlador,modelo,vista
+```
 ---
 
 ## Contribución
@@ -173,6 +183,13 @@ Checklist obligatorio en la descripción del PR:
 ## Changelog
 
 Consulte `CHANGELOG.md` para el historial de versiones (formato *Keep a Changelog*). Añada entradas para cada release mayor o cambio relevante.
+ [Unreleased]
+
+ JavaDoc básico añadido a las clases del paquete modelo.
+
+ [1.0.0] - 2025-11-13
+
+ Versión inicial del proyecto.
 
 ---
 
@@ -198,8 +215,9 @@ furnished to do so, subject to the following conditions:
 ## Autor
 
 Sebastián Polo Palacios (SebasZ777-Uni)
+Lucas Hernández 
 
-- Email: (añadir si desea)
+- Email: spolop@correo.unicordoba.edu.co
 - GitHub: `https://github.com/SebasZ777-Uni`
 
 ---
@@ -219,4 +237,4 @@ javadoc -d docs/api -sourcepath src -subpackages app,controlador,modelo,vista
 
 ---
 
-Si desea que también agregue `JAVADOC_STYLE.md`, `CONTRIBUTING.md`, `CHANGELOG.md` y el workflow de GitHub Actions, puedo crear esos archivos y preparar una rama `feature/docs` con commits separados y un ejemplo de PR description.
+Fin del README.md

@@ -3,7 +3,7 @@ import controlador.ControladorAtencion;
 import modelo.GestionAtencion;
 import vista.VentanaPrincipal;
 
-/**
+    /**
  * Punto de entrada de la aplicación GUI.
  *
  * <p>Inicia el modelo, la vista y el controlador y arranca el bucle de eventos Swing.
