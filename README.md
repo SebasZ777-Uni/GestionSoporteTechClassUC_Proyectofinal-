@@ -51,7 +51,7 @@ Desarrollar un sistema de gestión de atención al cliente que permita registrar
 
 Basado en la estructura de `src/` del repositorio:
 
-- `src/app`
+- `src/app` 
   - `Main.java` — clase con el punto de entrada de la aplicación.
 - `src/controlador`
   - `ControladorAtencion.java` — orquesta la interacción entre la vista y el modelo.
@@ -241,7 +241,10 @@ Sebastián Polo Palacios (SebasZ777-Uni)
 - Email: spolop@correo.unicordoba.edu.co
 - GitHub: `https://github.com/SebasZ777-Uni`
 
-Lucas Hernández Hernández 
+Lucas Hernández Hernández (LuckAhdz)
+
+- Email: lucas123hhdz@gmail.com
+- GitHub: `https://github.com/LuckAhdz`
 
 ---
 
